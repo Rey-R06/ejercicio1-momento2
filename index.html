@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Almacenes_exito_logo.svg.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="img/exito-removebg-preview.png" alt="">
+    </header>
+    <main>
+        <aside class="izquierda">
+        <h2>2023</h2>
+        <p>ACTIVOS CORRIENTES</p>
+        <form>
+            <label for="Efectivo">Efectivo y equivalentes de efectivo:</label>
+            <input type="text" id="Efectivo" required>
+            <label for="cuentasCobrar">Cuentas por cobrar:</label>
+            <input type="text" id="cuentasCobrar" required>
+            <br>
+            <label for="Inventarios">Inventarios:</label>
+            <input type="text" id="Inventarios" required>
+            <label for="InversionesC">Inversiones a corto plazo:</label>
+            <input type="text" id="InversionesC" required>
+        </form>
+
+        <hr>
+        <p>ACTIVOS NO CORRIENTES</p>
+        <form>
+            <label for="propiedades">Propiedades, planta y equipo (PPE):</label>
+            <input type="text" id="propiedades" required>
+            <label for="InversionesL">Inversiones a largo plazo:</label>
+            <input type="text" id="InversionesL" required>
+            <br>
+            <label for="activos">Activos intangibles:</label>
+            <input type="text" id="activos" required>
+            <label for="Inversionesi">Inversiones inmobiliarias:</label>
+            <input type="text" id="Inversionesi" required>
+            <br>
+        </form>
+        <button onclick="añoPasado()">enviar</button>
+        <hr>
+        <table class="total">
+            <tr>
+                <th>total activos corrientes</th>
+                <th>total activos no corrientes</th>
+            </tr>
+            <tr>
+                <td id="totalCorrientesP"></td>
+                <td id="totalNoCorrientesP"></td>
+            </tr>
+        </table>
+        </aside>
+        <aside class="derecha">
+            <h2>2024</h2>
+            <p>ACTIVOS CORRIENTES</p>
+            <form>
+                <label for="Efectivo2">Efectivo y equivalentes de efectivo:</label>
+                <input type="text" id="Efectivo2">
+                <label for="cuentasCobrar2">Cuentas por cobrar:</label>
+                <input type="text" id="cuentasCobrar2">
+                <br>
+                <label for="Inventarios2">Inventarios:</label>
+                <input type="text" id="Inventarios2">
+                <label for="InversionesC2">Inversiones a corto plazo:</label>
+                <input type="text" id="InversionesC2">
+            </form>
+            <hr>
+            <p>ACTIVOS NO CORRIENTES</p>
+            <form>
+                <label for="propiedades2">Propiedades, planta y equipo (PPE):</label>
+                <input type="text" id="propiedades2">
+                <label for="InversionesL2">Inversiones a largo plazo:</label>
+                <input type="text" id="InversionesL2">
+                <br>
+                <label for="activos2">Activos intangibles:</label>
+                <input type="text" id="activos2">
+                <label for="Inversionesi2">Inversiones inmobiliarias:</label>
+                <input type="text" id="Inversionesi2">
+            </form>
+            <button onclick="esteAño()">enviar</button>
+            <hr>
+            <table class="total">
+                <tr>
+                    <th>total activos corrientes</th>
+                    <th>total activosno corrientes</th>
+                </tr>
+                <tr>
+                    <td id="totalCorrientesE"></td>
+                    <td id="totalNoCorrientesE"></td>
+                </tr>
+            </table>
+        </aside>
+    </main>
+    <footer>
+        <table class="total">
+            <tr>
+                <th colspan="5">TOTAL ACTIVOS:</th>
+            </tr>
+            <tr>
+              <td colspan="4"><b>Año 2023</b></td>
+              <td colspan="4"><b>Año 2024</b></td>
+            </tr>
+            <tr>
+              <td colspan="4" id="total23">-</td>
+              <td colspan="4" id="total24">-</td>
+            </tr>
+          </table>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
